@@ -32,38 +32,6 @@ export default function Header({ backendStatus }) {
             </p>
           </div>
         </div>
-
-        {/* Status / Badge */}
-        <div className="flex items-center gap-3">
-
-          {backendStatus && (
-            <div
-              className={`hidden md:flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-md border ${
-                backendStatus === 'connected'
-                  ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-                  : backendStatus === 'checking'
-                  ? 'bg-amber-50 text-amber-700 border-amber-200'
-                  : 'bg-rose-50 text-rose-700 border-rose-200'
-              }`}
-              title={
-                backendStatus === 'connected'
-                  ? 'Backend is online'
-                  : 'Backend is offline. Ensure Python FastAPI is running.'
-              }
-            >
-              <span
-                className={`w-1.5 h-1.5 rounded-full ${
-                  backendStatus === 'connected'
-                    ? 'bg-emerald-500'
-                    : backendStatus === 'checking'
-                    ? 'bg-amber-500'
-                    : 'bg-rose-500'
-                }`}
-              />
-              <span className="capitalize">{backendStatus}</span>
-            </div>
-          )}
-        </div>
       </div>
     </header>
   )

@@ -94,7 +94,7 @@ export default function App() {
 
       {/* Main Content Area: Form & Prediction Result */}
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 py-8 md:py-12 space-y-8">
-        {/* Offline Warning Notice if Backend is unreachable */}
+        {/* Offline Warning Notice if Backend is unreachable
         {backendStatus === 'offline' && (
           <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center justify-between gap-4">
             <div className="flex items-center gap-2.5">
@@ -114,7 +114,7 @@ export default function App() {
               Check Again
             </button>
           </div>
-        )}
+        )} */}
 
         {/* Input Form */}
         <HousingForm
