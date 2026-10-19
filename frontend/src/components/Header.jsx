@@ -35,10 +35,6 @@ export default function Header({ backendStatus }) {
 
         {/* Status / Badge */}
         <div className="flex items-center gap-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#164E36]/10 text-[#164E36] text-xs font-semibold border border-[#164E36]/15">
-            <span className="w-2 h-2 rounded-full bg-[#3F8F57] animate-pulse"></span>
-            <span>ML-Powered Estimation</span>
-          </div>
 
           {backendStatus && (
             <div
